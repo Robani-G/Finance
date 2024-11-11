@@ -13,7 +13,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#stroke-home"></use>
+                    <use href="  #stroke-home"></use>
                   </svg></a></li>
               <li class="breadcrumb-item">Dashboard</li>
               <li class="breadcrumb-item active">Default</li>
@@ -102,7 +102,7 @@
                   <h4>Deliveries</h4>
                   <div class="icon-menu-header">
                     <svg>
-                      <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-horizontal"></use>
+                      <use href="  #more-horizontal"></use>
                     </svg>
                   </div>
                 </div>
@@ -230,7 +230,7 @@
                           <div class="dropdown">
                             <div id="dropdownMenuButtonicon31" data-bs-toggle="dropdown" aria-expanded="false" role="menu">
                               <svg class="invoice-icon">
-                                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                <use href="  #more-vertical"></use>
                               </svg>
                             </div>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonicon31"><span class="dropdown-item">Last Month </span><span class="dropdown-item">Last Week</span><span class="dropdown-item">Last Day </span></div>
@@ -249,7 +249,7 @@
                           <div class="dropdown">
                             <div id="dropdownMenuButtonicon32" data-bs-toggle="dropdown" aria-expanded="false" role="menu">
                               <svg class="invoice-icon">
-                                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                <use href="  #more-vertical"></use>
                               </svg>
                             </div>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonicon32"><span class="dropdown-item">Last Month </span><span class="dropdown-item">Last Week</span><span class="dropdown-item">Last Day </span></div>
@@ -268,7 +268,7 @@
                           <div class="dropdown">
                             <div id="dropdownMenuButtonicon33" data-bs-toggle="dropdown" aria-expanded="false" role="menu">
                               <svg class="invoice-icon">
-                                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                <use href="  #more-vertical"></use>
                               </svg>
                             </div>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonicon33"><span class="dropdown-item">Last Month </span><span class="dropdown-item">Last Week</span><span class="dropdown-item">Last Day </span></div>
@@ -287,7 +287,7 @@
                           <div class="dropdown">
                             <div id="dropdownMenuButtonicon34" data-bs-toggle="dropdown" aria-expanded="false" role="menu">
                               <svg class="invoice-icon">
-                                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                <use href="  #more-vertical"></use>
                               </svg>
                             </div>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonicon34"><span class="dropdown-item">Last Month </span><span class="dropdown-item">Last Week</span><span class="dropdown-item">Last Day </span></div>
@@ -306,7 +306,7 @@
                           <div class="dropdown">
                             <div id="dropdownMenuButtonicon35" data-bs-toggle="dropdown" aria-expanded="false" role="menu">
                               <svg class="invoice-icon">
-                                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                <use href="  #more-vertical"></use>
                               </svg>
                             </div>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonicon35"><span class="dropdown-item">Last Month </span><span class="dropdown-item">Last Week</span><span class="dropdown-item">Last Day </span></div>
@@ -447,7 +447,7 @@
                 <div><a class="f-w-600 f-14 " href="index.html">Most Visited Day</a><span class="f-light f-w-500 f-14 d-block">Total 59.6k visits on Sunday </span></div>
                 <div class="visited-dropdown">
                   <svg class="mb-0">
-                    <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#arrow-down"></use>
+                    <use href="  #arrow-down"></use>
                   </svg>
                 </div>
               </div>

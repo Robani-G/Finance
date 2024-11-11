@@ -16,14 +16,14 @@
   // left sidebar and vertical menu
   if ($("#pageWrapper").hasClass("compact-wrapper")) {
     $(".sidebar-title").append(
-      '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+      '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
     );
     $(".sidebar-title").click(function () {
       $(".sidebar-title")
         .removeClass("active")
         .find("div")
         .replaceWith(
-          '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+          '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
         );
       $(".sidebar-submenu, .menu-content").slideUp("normal");
       $(".menu-content").slideUp("normal");
@@ -32,27 +32,27 @@
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
         $(this).next().slideDown("normal");
       } else {
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
       }
     });
     $(".sidebar-submenu, .menu-content").hide();
     $(".submenu-title").append(
-      '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+      '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
     );
     $(".submenu-title").click(function () {
       $(".submenu-title")
         .removeClass("active")
         .find("div")
         .replaceWith(
-          '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+          '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
         );
       $(".submenu-content").slideUp("normal");
       if ($(this).next().is(":hidden") == true) {
@@ -60,14 +60,14 @@
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
         $(this).next().slideDown("normal");
       } else {
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
       }
     });
@@ -86,14 +86,14 @@
           .removeClass("horizontal-menu")
           .addClass("sidebar-icon");
         $(".submenu-title").append(
-          '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+          '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
         );
         $(".submenu-title").click(function () {
           $(".submenu-title").removeClass("active");
           $(".submenu-title")
             .find("div")
             .replaceWith(
-              '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+              '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
             );
           $(".submenu-content").slideUp("normal");
           if ($(this).next().is(":hidden") == true) {
@@ -101,28 +101,28 @@
             $(this)
               .find("div")
               .replaceWith(
-                '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+                '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
               );
             $(this).next().slideDown("normal");
           } else {
             $(this)
               .find("div")
               .replaceWith(
-                '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+                '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
               );
           }
         });
         $(".submenu-content").hide();
 
         $(".sidebar-title").append(
-          '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+          '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
         );
         $(".sidebar-title").click(function () {
           $(".sidebar-title").removeClass("active");
           $(".sidebar-title")
             .find("div")
             .replaceWith(
-              '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+              '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
             );
           $(".sidebar-submenu, .menu-content").slideUp("normal");
           if ($(this).next().is(":hidden") == true) {
@@ -130,14 +130,14 @@
             $(this)
               .find("div")
               .replaceWith(
-                '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+                '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
               );
             $(this).next().slideDown("normal");
           } else {
             $(this)
               .find("div")
               .replaceWith(
-                '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+                '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
               );
           }
         });
@@ -184,14 +184,14 @@
     });
     $(".sidebar-submenu, .menu-content").hide();
     $(".submenu-title").append(
-      '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+      '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
     );
     $(".submenu-title").click(function () {
       $(".submenu-title")
         .removeClass("active")
         .find("div")
         .replaceWith(
-          '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+          '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
         );
       $(".submenu-content").slideUp("normal");
       if ($(this).next().is(":hidden") == true) {
@@ -199,14 +199,14 @@
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
         $(this).next().slideDown("normal");
       } else {
         $(this)
           .find("div")
           .replaceWith(
-            '<div class="according-menu"><i class="fa fa-angle-right"></i></div>'
+            '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
           );
       }
     });
@@ -289,9 +289,9 @@
   var menuWrapperSize = getMenuWrapperSize();
 
   if (menuWrapperSize >= "1660") {
-    var sliderLimit = -3500; 
+    var sliderLimit = -3500;
   } else if (menuWrapperSize >= "1440") {
-    var sliderLimit = -3600; 
+    var sliderLimit = -3600;
   } else {
     var sliderLimit = -4200;
   }
@@ -355,7 +355,7 @@
             .children("a")
             .find("div")
             .replaceWith(
-              '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+              '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
             );
           $(this)
             .parent()
@@ -366,7 +366,7 @@
             .children("a")
             .find("div")
             .replaceWith(
-              '<div class="according-menu"><i class="fa fa-angle-down"></i></div>'
+              '<div class="according-menu"><svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>'
             );
           return false;
         }

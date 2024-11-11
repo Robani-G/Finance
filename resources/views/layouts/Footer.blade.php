@@ -38,6 +38,12 @@
 <script src="{{ asset('assets/js/chart/echart/pie-chart/custom-transition-texture.js') }}"></script>
 <script src="{{ asset('assets/js/chart/echart/data/symbols.js') }}"></script>
 <!-- calendar js-->
+<script src="{{ asset('assets/js/letter-box/custom-mail-pagination.js') }}"></script>
+<script src="{{ asset('assets/js/letter-box/custom-usermail.js') }}"></script>
+<script src="{{ asset('assets/js/editors/quill.js') }}"></script>
+<script src="{{ asset('assets/js/editors/custom-quill.js') }}"></script>
+<script src="{{ asset('assets/js/print.js') }}"></script>
+<script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
 <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
 <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
 <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>

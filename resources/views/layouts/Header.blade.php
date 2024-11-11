@@ -26,80 +26,14 @@
       </div>
       <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
         <ul class="nav-menus">
-          <li class="d-md-block d-none">
-            <div class="form search-form mb-0">
-              <div class="input-group"><span class="input-icon">
-                  <svg>
-                    <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#search-header"></use>
-                  </svg>
-                  <input class="w-100" type="search" placeholder="Search"></span></div>
-            </div>
-          </li>
-          <li class="d-md-none d-block">
-            <div class="form search-form mb-0">
-              <div class="input-group"> <span class="input-show">
-                  <svg id="searchIcon">
-                    <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#search-header"></use>
-                  </svg>
-                  <div id="searchInput">
-                    <input type="search" placeholder="Search">
-                  </div></span></div>
-            </div>
-          </li>
-          <li class="onhover-dropdown">
-            <svg>
-              <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#star"></use>
-            </svg>
-            <div class="onhover-show-div bookmark-flip">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="front">
-                    <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
-                    <ul class="bookmark-dropdown">
-                      <li>
-                        <div class="row">
-                          <div class="col-4 text-center">
-                            <div class="bookmark-content">
-                              <div class="bookmark-icon"><i data-feather="file-text"></i></div><span>Forms</span>
-                            </div>
-                          </div>
-                          <div class="col-4 text-center">
-                            <div class="bookmark-content">
-                              <div class="bookmark-icon"><i data-feather="user"></i></div><span>Profile</span>
-                            </div>
-                          </div>
-                          <div class="col-4 text-center">
-                            <div class="bookmark-content">
-                              <div class="bookmark-icon"><i data-feather="server"></i></div><span>Tables</span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="text-center"><a class="flip-btn f-w-700" id="flip-btn" href="javascript:void(0)">Add New Bookmark</a></li>
-                    </ul>
-                  </div>
-                  <div class="back">
-                    <ul>
-                      <li>
-                        <div class="bookmark-dropdown flip-back-content">
-                          <input type="text" placeholder="search...">
-                        </div>
-                      </li>
-                      <li><a class="f-w-700 d-block flip-back" id="flip-back" href="javascript:void(0)">Back</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+
           <li>
             <div class="mode"><i class="moon" data-feather="moon"> </i></div>
           </li>
           <li class="onhover-dropdown notification-down">
             <div class="notification-box">
-              <svg>
-                <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#notification-header"></use>
-              </svg><span class="badge rounded-pill badge-secondary">4 </span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133px" height="133px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#3d3846" d="M56,44c-1.832,0-4-2.168-4-4V20C52,8.973,43.027,0,32,0S12,8.973,12,20v20c0,1.793-2.207,4-4,4 c-2.211,0-4,1.789-4,4s1.789,4,4,4h48c2.211,0,4-1.789,4-4S58.211,44,56,44z"></path> <path fill="#3d3846" d="M32,64c4.418,0,8-3.582,8-8H24C24,60.418,27.582,64,32,64z"></path> </g> </g></svg>
+                <span class="badge rounded-pill badge-secondary">4 </span>
             </div>
             <div class="onhover-show-div notification-dropdown">
               <div class="card mb-0">
@@ -149,7 +83,7 @@
                                   </div>
                                   <div>
                                     <svg>
-                                      <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                      <use href="  #more-vertical"></use>
                                     </svg>
                                   </div>
                                 </div>
@@ -163,7 +97,7 @@
                                   </div>
                                   <div>
                                     <svg>
-                                      <use href="https://admin.pixelstrap.net/riho/assets/svg/icon-sprite.svg#more-vertical"></use>
+                                      <use href="  #more-vertical"></use>
                                     </svg>
                                   </div>
                                 </div>
@@ -274,7 +208,9 @@
           <li class="profile-nav onhover-dropdown">
             <div class="media profile-media"><img class="b-r-10" src="{{ asset('assets/images/dashboard/profile.png') }}" alt="">
               <div class="media-body d-xxl-block d-none box-col-none">
-                <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span><i class="middle fa fa-angle-down"> </i></div>
+                <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span>
+                    <svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
                 <p class="mb-0 font-roboto">Admin</p>
               </div>
             </div>
