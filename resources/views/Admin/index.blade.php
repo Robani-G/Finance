@@ -33,7 +33,9 @@
                 <div class="card">
                     <div class="card-body">
                     <div class="email-app-sidebar">
-                        <button class="btn btn-primary emailbox" type="button" data-bs-toggle="modal" data-bs-target="#compose_mail"><i class="fa fa-plus"></i>Compose Email</button>
+                        <a href="{{ route('Admin.Files.Send') }}" class="nav-link ">
+                            <button class="btn btn-primary emailbox" type="button" ><i class="fa fa-plus"></i>Compose Email</button>
+                        </a>
                         <ul class="nav nav-pills main-menu email-category" id="email-pills-tab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="inbox-pill-tab" data-bs-toggle="pill" href="#inbox-pill" role="tab" aria-controls="inbox-pill" aria-selected="false">
                             <svg class="stroke-icon">
@@ -65,7 +67,6 @@
                             <svg class="stroke-icon">
                             <use href="  #mail"></use>
                             </svg><span class="f-w-600"> </span></a></li>
-
                     </ul>
                     </div>
                 </div>
@@ -154,246 +155,29 @@
                 <div class="tab-pane fade show active" id="inbox-pill" role="tabpanel" aria-labelledby="inbox-pill-tab">
                     <div class="mail-body-wrapper">
                     <ul id="paginated-list" data-current-page="1" aria-live="polite">
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxB" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxB"></label>
-                            </div>
-                            <svg class="important-mail active">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
-                            <p>Marvin McKinney</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>New comments on MSR2024 draft presentation - <span>New Here's a list of all the topic challenges...</span></span>
-                            <div class="badge badge-light-primary">new</div>
-                            </div>
-                            <div class="email-timing"><span>2:30 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxC" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxC"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
-                            <p>Brooklyn Simmons</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
-                            <div class="badge badge-light-primary">deadline</div>
-                            </div>
-                            <div class="email-timing"><span>7:50 AM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxD" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxD"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border">
-                            <div>
-                                <p class="txt-primary">EH</p>
-                            </div>
-                            </div>
-                            <p>Esther Howard</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span>craft beer labore wes anderson cred nesciunt sapiente ea proident...</span></span>
-                            <div class="badge badge-light-success">work</div>
-                            </div>
-                            <div class="email-timing"><span>1:00 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxE" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxE"></label>
-                            </div>
-                            <svg class="important-mail active">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border">
-                            <div class="circle-success">
-                                <p class="txt-success">CW</p>
-                            </div>
-                            </div>
-                            <p>Cameron Williamson</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Very fiction Link  -<span>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</span></span></div>
-                            <div class="email-timing"><span>5 Day ago</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxF" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxF"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"></div>
-                            <p>Ronald Richards</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span>Confirm your booking id - A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
-                            <div class="badge badge-light-light">Update.Zip</div>
-                            </div>
-                            <div class="email-timing"><span>7 April</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxG" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxG"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/10.jpg" alt="user"></div>
-                            <p>Darlene Robertson</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Promotion Mail  -<span>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda ...</span></span>
-                            <div class="badge badge-light-light">Import File..</div>
-                            </div>
-                            <div class="email-timing"><span>04 April</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxH" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxH"></label>
-                            </div>
-                            <svg class="important-mail active">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
-                            <p>Jacob Jones</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Welcome to our new office  -<span>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span></div>
-                            <div class="email-timing"><span>01 April</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxI" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxI"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
-                            <p>Ralph Edwards</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Your Order #224820098 has been Confirmed-<span>A collection of textile samples lay spread out on the table...</span></span></div>
-                            <div class="email-timing"><span>1:00 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxJ" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxJ"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"></div>
-                            <p>Ronald Richards</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span>Confirm your booking id - A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
-                            <div class="badge badge-light-light">Update.Zip</div>
-                            </div>
-                            <div class="email-timing"><span>7 April</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxK" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxK"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border">
-                            <div class="circle-success">
-                                <p class="txt-success">WT</p>
-                            </div>
-                            </div>
-                            <p>William Turner</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Very fiction Link  -<span>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</span></span></div>
-                            <div class="email-timing"><span>5 Day ago</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxL" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxL"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
-                            <p>Jacob Jones</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Welcome to our new office  -<span>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span></div>
-                            <div class="email-timing"><span>01 April</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxM" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxM"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
-                            <p>Ralph Edwards</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Your Order #224820098 has been Confirmed-<span>A collection of textile samples lay spread out on the table...</span></span></div>
-                            <div class="email-timing"><span>1:00 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
+
+                        @foreach ($Received_Files as $Received_File)
+                            <li class="inbox-data">
+                                <div class="inbox-user">
+                                    <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckboxB" type="checkbox" value="option1">
+                                    <label class="form-check-label" for="emailCheckboxB"></label>
+                                    </div>
+                                    <svg class="important-mail active">
+                                    <use href="  #fill-star"></use>
+                                    </svg>
+                                    <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
+                                    <p>{{ $file->UserId->name }}</p>
+                                </div>
+                                <div class="inbox-message">
+                                    <div class="email-data"><span>New comments on MSR2024 draft presentation - <span>New Here's a list of all the topic challenges...</span></span>
+                                    <div class="badge badge-light-primary">new</div>
+                                    </div>
+                                    <div class="email-timing"><span>2:30 PM</span></div>
+                                    <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                            </li>
+                        @endforeach
                     </ul>
                     </div>
                     <div class="mail-pagination">
@@ -405,95 +189,31 @@
                 <div class="tab-pane fade" id="sent-pill" role="tabpanel" aria-labelledby="sent-pill-tab">
                     <div class="mail-body-wrapper">
                     <ul>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxN" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxN"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/14.png" alt="user"></div>
-                            <p>Brooklyn Simmons</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
-                            <div class="badge badge-light-primary">new</div>
-                            </div>
-                            <div class="email-timing"><span>7:50 AM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxO" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxO"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
-                            <p>Marvin McKinney</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>New comments on MSR2024 draft presentation - <span>New Here's a list of all the topic challenges...</span></span></div>
-                            <div class="email-timing"><span>2:30 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxP" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxP"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border">
-                            <div>
-                                <p class="txt-primary">EH</p>
-                            </div>
-                            </div>
-                            <p>Esther Howard</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Confirm your booking id -<span>craft beer labore wes anderson cred nesciunt sapiente ea proident...</span></span>
-                            <div class="badge badge-light-primary">new</div>
-                            <div class="badge badge-light-success">Task</div>
-                            </div>
-                            <div class="email-timing"><span>1:00 PM</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
-                        <li class="inbox-data">
-                        <div class="inbox-user">
-                            <div class="form-check form-check-inline m-0">
-                            <input class="form-check-input checkbox-primary" id="emailCheckboxQ" type="checkbox" value="option1">
-                            <label class="form-check-label" for="emailCheckboxQ"></label>
-                            </div>
-                            <svg class="important-mail">
-                            <use href="  #fill-star"></use>
-                            </svg>
-                            <div class="rounded-border">
-                            <div class="circle-success">
-                                <p class="txt-success">JW</p>
-                            </div>
-                            </div>
-                            <p>Jack Williamson</p>
-                        </div>
-                        <div class="inbox-message">
-                            <div class="email-data"><span>Very fiction Link  -<span>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</span></span></div>
-                            <div class="email-timing"><span>5 Day ago</span></div>
-                            <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                        </div>
-                        </li>
+                        @foreach ($Sent_Files as $Sent_File)
+                            <li class="inbox-data">
+                                <div class="inbox-user">
+                                    <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckboxN" type="checkbox" value="option1">
+                                    <label class="form-check-label" for="emailCheckboxN"></label>
+                                    </div>
+                                    <svg class="important-mail">
+                                    <use href="  #fill-star"></use>
+                                    </svg>
+                                    <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/14.png" alt="user"></div>
+                                    <p>{{ $Sent_File->SharedToUser->name }}</p>
+                                </div>
+                                <div class="inbox-message">
+                                    <div class="email-data"><span>Confirm your booking id -<span> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
+                                    <div class="badge badge-light-primary">new</div>
+                                    </div>
+                                    <div class="email-timing"><span>7:50 AM</span></div>
+                                    <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                            </li>
+                        @endforeach
                     </ul>
                     </div>
                 </div>
-
                 </div>
             </div>
             <div class="card email-body email-read">
@@ -576,9 +296,15 @@
                     </div>
                     <div class="user-footer">
                     <div>
-                        <svg>
-                        <use href="  #attchment"></use>
-                        </svg><span class="f-light">Attachments</span>
+                        <svg style="display: none;">
+                            <symbol id="attachment" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2749 10.1251L8.21657 12.1834C7.0749 13.3251 7.0749 15.1667 8.21657 16.3084C9.35824 17.4501 11.1999 17.4501 12.3416 16.3084L15.5832 13.0667C17.8582 10.7917 17.8582 7.09172 15.5832 4.81672C13.3082 2.54172 9.60824 2.54172 7.33324 4.81672L3.7999 8.35006C1.8499 10.3001 1.8499 13.4667 3.7999 15.4251" stroke="#52526C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </symbol>
+                        </svg>
+                        <svg class="btn-attachment" width="24" height="24">
+                            <use href="#attachment"></use>
+                        </svg>
+                        <span class="f-light">Attachments</span>
                     </div>
                     <div class="d-inline-block">
                         <div class="attchment-file common-flex">

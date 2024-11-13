@@ -38,9 +38,16 @@
 <script src="{{ asset('assets/js/chart/echart/pie-chart/custom-transition-texture.js') }}"></script>
 <script src="{{ asset('assets/js/chart/echart/data/symbols.js') }}"></script>
 <!-- calendar js-->
+<!-- calendar js-->
+<script src="{{ asset('assets/js/dropzone/dropzone.js') }}"></script>
+<script src="{{ asset('assets/js/dropzone/dropzone-script.js') }}"></script>
+<script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
+<script src="{{ asset('assets/js/editors/quill.js') }}"></script>
+<script src="{{ asset('assets/js/custom-add-product4.js') }}"></script>
+<script src="{{ asset('assets/js/form-validation-custom.js') }}"></script>
 <script src="{{ asset('assets/js/letter-box/custom-mail-pagination.js') }}"></script>
 <script src="{{ asset('assets/js/letter-box/custom-usermail.js') }}"></script>
-<script src="{{ asset('assets/js/editors/quill.js') }}"></script>
 <script src="{{ asset('assets/js/editors/custom-quill.js') }}"></script>
 <script src="{{ asset('assets/js/print.js') }}"></script>
 <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>

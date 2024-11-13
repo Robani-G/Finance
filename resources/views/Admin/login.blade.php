@@ -1,6 +1,4 @@
 @include('layouts.Head')
-
-
 <!-- login page start-->
 <div class="container-fluid">
     <div class="row">
@@ -26,27 +24,20 @@
                 <div class="form-group">
                   <label class="col-form-label">{{ __('Password') }}</label>
                   <div class="form-input position-relative">
-                    <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password" placeholder="*********">
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+                    <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" required="" placeholder="*********">
                     <div class="show-hide">
                         <span class="show">                         </span></div>
                   </div>
                 </div>
                 <div class="form-group mb-0">
                   <div class="checkbox p-0">
-                    <input name="remember" id="remember" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
-                    <label class="text-muted" for="checkbox1">{{ __('Remember Me') }}</label>
+                    <input id="checkbox1" type="checkbox">
+                    <label class="text-muted" for="checkbox1">Remember password</label>
                   </div>
-                  <button class="btn btn-primary btn-block w-100" type="submit">{{ __('Login') }}</button>
+                  <button class="btn btn-primary btn-block w-100" type="submit">Sign in</button>
                 </div>
-                @if (Route::has('password.request'))
-                    <p class="mt-4 mb-0 text-center"><a class="ms-2" href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}</a></p>
-                @endif
 
+                <p class="mt-4 mb-0 text-center"><a class="ms-2" href="sign-up.html">Forgot Your Password?</a></p>
               </form>
             </div>
           </div>

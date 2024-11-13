@@ -23,8 +23,8 @@ class File extends Model
         'file_name',
         'file_path',
         'shared_with_user_id',
-        'user_id'
-
+        'user_id',
+        'read',
     ];
 
     public function UserId(){

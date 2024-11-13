@@ -58,10 +58,10 @@
 
   $(".show-hide span").click(function () {
     if ($(this).hasClass("show")) {
-      $('input[name="login[password]"]').attr("type", "text");
+      $('input[name="password"]').attr("type", "text");
       $(this).removeClass("show");
     } else {
-      $('input[name="login[password]"]').attr("type", "password");
+      $('input[name="password"]').attr("type", "password");
       $(this).addClass("show");
     }
   });
@@ -155,12 +155,12 @@
       $("body").removeClass("dark-only");
       $("body").addClass("light");
     }
-  }); 
+  });
   // $("body").addClass(
   //   localStorage.getItem("mode")
   //     ? localStorage.getItem("mode")
   //     : "light"
-  // ); 
+  // );
   $(".mode").addClass(
     localStorage.getItem("mode") === "dark-only" ? "active" : " "
   );
@@ -382,6 +382,6 @@
       document.getElementById("searchInput").classList.remove("show")
     }
   })
-  // ================ show and hide input css end 
+  // ================ show and hide input css end
 
 })(jQuery);

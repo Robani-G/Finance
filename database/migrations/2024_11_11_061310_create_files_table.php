@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('file_path');
             $table->foreignUuid('user_id')->constrained('users');
             $table->foreignUuid('shared_with_user_id')->constrained('users');
+            $table->boolean('read');
             $table->timestamps();
         });
     }

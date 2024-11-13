@@ -19,10 +19,9 @@
       <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
         <div> <a class="toggle-sidebar" href="#"> <i class="iconly-Category icli"> </i></a>
           <div class="d-flex align-items-center gap-2 ">
-            <h4 class="f-w-600">Welcome Alex</h4><img class="mt-0" src="{{ asset('assets/images/hand.gif') }}" alt="hand-gif">
+            <h4 class="f-w-600">Welcome {{ Auth::user()->name }} </h4><img class="mt-0" src="{{ asset('assets/images/hand.gif') }}" alt="hand-gif">
           </div>
         </div>
-        <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12">Here’s what’s happening with your store today. </span></div>
       </div>
       <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
         <ul class="nav-menus">
@@ -206,19 +205,28 @@
             </div>
           </li>
           <li class="profile-nav onhover-dropdown">
-            <div class="media profile-media"><img class="b-r-10" src="{{ asset('assets/images/dashboard/profile.png') }}" alt="">
-              <div class="media-body d-xxl-block d-none box-col-none">
-                <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span>
-                    <svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <div class="media profile-media d-flex align-items-center">
+                <img class="b-r-10" src="{{ asset('assets/images/user.png') }}" alt="">
+                <div class="media-body d-xxl-block d-none box-col-none">
+                    <div class="d-flex align-items-center"> <span>{{ Auth::user()->name }} </span>
+                        <svg width="215px" height="215px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
                 </div>
-                <p class="mb-0 font-roboto">Admin</p>
-              </div>
             </div>
             <ul class="profile-dropdown onhover-show-div">
               <li><a href="user-profile.html"><i data-feather="user"></i><span>My Profile</span></a></li>
               <li><a href="letter-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
               <li> <a href="edit-profile.html"> <i data-feather="settings"></i><span>Settings</span></a></li>
-              <li><a class="btn btn-pill btn-outline-primary btn-sm" href="login.html">Log Out</a></li>
+              <li>
+                <a class="btn btn-pill btn-outline-primary btn-sm" href="{{ route('logout') }}"
+                                                                    onclick="event.preventDefault();
+                                                                                    document.getElementById('logout-form').submit();">
+                    {{ __('Log Out') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
             </ul>
           </li>
         </ul>

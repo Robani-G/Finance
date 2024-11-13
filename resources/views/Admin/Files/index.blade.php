@@ -48,8 +48,8 @@
             @foreach ($files as $file)
                 <tr>
                     <td>{{ $file->file_name }}</td>
-                    <td>{{ $file->user->name }}</td>
-                    <td>{{ $file->sharedWithUser->name }}</td>
+                    <td>{{ $file->UserId->name }}</td>
+                    <td>{{ $file->SharedToUser->name }}</td>
                     <td>
                         <a href="{{ route('file.download', $file->id) }}" class="btn btn-success">Download</a>
                     </td>
