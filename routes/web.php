@@ -17,7 +17,11 @@ Route::middleware(['auth'])->group(function () {
     });
 
     Route::get('/add', function () {
-        return view('template.add-post');
+        return view('template.letter-box');
+    });
+
+    Route::get('/company/index', function () {
+        return view('Admin.Company.Index');
     });
 
     Route::get('/files', [FileController::class, 'index'])->name('Admin.index');

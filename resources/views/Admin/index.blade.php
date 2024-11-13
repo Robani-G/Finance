@@ -167,11 +167,11 @@
                                     <use href="  #fill-star"></use>
                                     </svg>
                                     <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
-                                    <p>{{ $file->UserId->name }}</p>
+                                    <p>{{ $Received_File->UserId->name }}</p>
                                 </div>
                                 <div class="inbox-message">
                                     <div class="email-data"><span>New comments on MSR2024 draft presentation - <span>New Here's a list of all the topic challenges...</span></span>
-                                    <div class="badge badge-light-primary">new</div>
+                                    <div class="badge badge-light-primary">{{$Received_File->file_name}}</div>
                                     </div>
                                     <div class="email-timing"><span>2:30 PM</span></div>
                                     <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
@@ -199,12 +199,12 @@
                                     <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                     </svg>
-                                    <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/14.png" alt="user"></div>
+                                    <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user.png') }}" alt="user"></div>
                                     <p>{{ $Sent_File->SharedToUser->name }}</p>
                                 </div>
                                 <div class="inbox-message">
                                     <div class="email-data"><span>Confirm your booking id -<span> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
-                                    <div class="badge badge-light-primary">new</div>
+                                    <div class="badge badge-light-primary">{{$Sent_File->file_name}}</div>
                                     </div>
                                     <div class="email-timing"><span>7:50 AM</span></div>
                                     <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>

@@ -9,36 +9,38 @@
     <meta name="description" content="Riho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Riho admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
     <title>Riho - Premium Admin Template</title>
     <!-- Google font-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.css') }}">
+
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.css') }}">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/icofont.css') }}">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/themify.css') }}">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/flag-icon.css') }}">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/feather-icon.css') }}">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/scrollbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/quill.snow.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/animate.css') }}">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/bootstrap.css') }}">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+    <link id="color" rel="stylesheet" href="{{ asset('assets/css/color-1.css') }}" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
   </head>
   <body>
     <!-- loader starts-->
@@ -68,13 +70,13 @@
             </div>
           </form>
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"> <a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo_dark.png" alt="logo-light"><img class="img-fluid for-dark" src="../assets/images/logo/logo.png" alt="logo-dark"></a></div>
+            <div class="logo-wrapper"> <a href="index.html"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo_dark.png') }}" alt="logo-light"><img class="img-fluid for-dark" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo-dark"></a></div>
             <div class="toggle-sidebar"> <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
           </div>
           <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
             <div> <a class="toggle-sidebar" href="#"> <i class="iconly-Category icli"> </i></a>
               <div class="d-flex align-items-center gap-2 ">
-                <h4 class="f-w-600">Welcome Alex</h4><img class="mt-0" src="../assets/images/hand.gif" alt="hand-gif">
+                <h4 class="f-w-600">Welcome Alex</h4><img class="mt-0" src="{{ asset('assets/images/hand.gif') }}" alt="hand-gif">
               </div>
             </div>
             <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12">Here’s what’s happening with your store today. </span></div>
@@ -179,7 +181,7 @@
                               <div class="cart-dropdown notification-all">
                                 <ul>
                                   <li class="pr-0 pl-0 pb-3 pt-3">
-                                    <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/receiver-img.jpg" alt="">
+                                    <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/images/other-images/receiver-img.jpg') }}" alt="">
                                       <div class="media-body"><a class="f-light f-w-500" href="product.html">Men Blue T-Shirt</a>
                                         <div class="qty-box">
                                           <div class="input-group"> <span class="input-group-prepend">
@@ -197,7 +199,7 @@
                               </div>
                               <ul>
                                 <li>
-                                  <div class="user-alerts"><img class="user-image rounded-circle img-fluid me-2" src="../assets/images/dashboard/user/5.jpg" alt="user"/>
+                                  <div class="user-alerts"><img class="user-image rounded-circle img-fluid me-2" src="{{ asset('assets/images/dashboard/user/5.jpg') }}" alt="user"/>
                                     <div class="user-name">
                                       <div>
                                         <h6><a class="f-w-500 f-14" href="user-profile.html">Floyd Miles</a></h6><span class="f-light f-w-500 f-12">Sir, Can i remove part in des...</span>
@@ -211,7 +213,7 @@
                                   </div>
                                 </li>
                                 <li>
-                                  <div class="user-alerts"><img class="user-image rounded-circle img-fluid me-2" src="../assets/images/dashboard/user/6.jpg" alt="user"/>
+                                  <div class="user-alerts"><img class="user-image rounded-circle img-fluid me-2" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"/>
                                     <div class="user-name">
                                       <div>
                                         <h6><a class="f-w-500 f-14" href="user-profile.html">Dianne Russell</a></h6><span class="f-light f-w-500 f-12">So, what is my next work ?</span>
@@ -232,7 +234,7 @@
                               <ul>
                                 <li class="notification d-flex w-100 justify-content-between align-items-center">
                                   <div class="d-flex w-100 notification-data justify-content-center align-items-center gap-2">
-                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="../assets/images/dashboard/user/3.jpg" alt="user"/></div>
+                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="{{ asset('assets/images/dashboard/user/3.jpg') }}" alt="user"/></div>
                                     <div class="flex-grow-1">
                                       <div class="common-space user-id w-100">
                                         <div class="common-space w-100"> <a class="f-w-500 f-12" href="private-chat.html">Robert D. Hambly</a></div>
@@ -243,7 +245,7 @@
                                 </li>
                                 <li class="notification d-flex w-100 justify-content-between align-items-center">
                                   <div class="d-flex w-100 notification-data justify-content-center align-items-center gap-2">
-                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="../assets/images/dashboard/user/7.jpg" alt="user"/></div>
+                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="{{ asset('assets/images/dashboard/user/7.jpg') }}" alt="user"/></div>
                                     <div class="flex-grow-1">
                                       <div class="common-space user-id w-100">
                                         <div class="common-space w-100"> <a class="f-w-500 f-12" href="private-chat.html">Courtney C. Strang</a></div>
@@ -254,7 +256,7 @@
                                 </li>
                                 <li class="notification d-flex w-100 justify-content-between align-items-center">
                                   <div class="d-flex w-100 notification-data justify-content-center align-items-center gap-2">
-                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="../assets/images/dashboard/user/5.jpg" alt="user"/></div>
+                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="{{ asset('assets/images/dashboard/user/5.jpg') }}" alt="user"/></div>
                                     <div class="flex-grow-1">
                                       <div class="common-space user-id w-100">
                                         <div class="common-space w-100"> <a class="f-w-500 f-12" href="private-chat.html">Raye T. Sipes</a></div>
@@ -265,7 +267,7 @@
                                 </li>
                                 <li class="notification d-flex w-100 justify-content-between align-items-center">
                                   <div class="d-flex w-100 notification-data justify-content-center align-items-center gap-2">
-                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="../assets/images/dashboard/user/6.jpg" alt="user"/></div>
+                                    <div class="user-alerts flex-shrink-0"><img class="rounded-circle img-fluid img-40" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"/></div>
                                     <div class="flex-grow-1">
                                       <div class="common-space user-id w-100">
                                         <div class="common-space w-100"> <a class="f-w-500 f-12" href="private-chat.html">Henry S. Miller</a></div>
@@ -281,7 +283,7 @@
                             <div class="cart-dropdown mt-4">
                               <ul>
                                 <li class="pr-0 pl-0 pb-3">
-                                  <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/cart-img.jpg" alt="">
+                                  <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/images/other-images/cart-img.jpg') }}" alt="">
                                     <div class="media-body"><a class="f-light f-w-500" href="product.html">Furniture Chair for Home</a>
                                       <div class="qty-box">
                                         <div class="input-group"> <span class="input-group-prepend">
@@ -296,7 +298,7 @@
                                   </div>
                                 </li>
                                 <li class="pr-0 pl-0 pb-3 pt-3">
-                                  <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/receiver-img.jpg" alt="">
+                                  <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/images/other-images/receiver-img.jpg') }}" alt="">
                                     <div class="media-body"><a class="f-light f-w-500" href="product.html">Men Cotton Blend Blue T-Shirt</a>
                                       <div class="qty-box">
                                         <div class="input-group"> <span class="input-group-prepend">
@@ -327,7 +329,7 @@
                 </div>
               </li>
               <li class="profile-nav onhover-dropdown">
-                <div class="media profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt="">
+                <div class="media profile-media"><img class="b-r-10" src="{{ asset('assets/images/dashboard/profile.png') }}" alt="">
                   <div class="media-body d-xxl-block d-none box-col-none">
                     <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span><i class="middle fa fa-angle-down"> </i></div>
                     <p class="mb-0 font-roboto">Admin</p>
@@ -345,8 +347,7 @@
           <script class="result-template" type="text/x-handlebars-template">
             <div class="ProfileCard u-cf">
             <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
-            <div class="ProfileCard-details">
-            <div class="ProfileCard-realName">{{name}}</div>
+            <div class="ProfileCard-details"> 
             </div>
             </div>
           </script>
@@ -358,16 +359,16 @@
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-layout="stroke-svg">
-          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a>
+          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
           </div>
-          <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a></div>
+          <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="{{ asset('assets/images/logo/logo-icon.png') }}" alt=""></a></div>
           <nav class="sidebar-main">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a>
+                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="{{ asset('assets/images/logo/logo-icon.png') }}" alt=""></a>
                   <div class="mobile-back text-end"> <span>Back </span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
                 <li class="pin-title sidebar-main-title">
@@ -1176,7 +1177,7 @@
                                   <svg class="important-mail active">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"></div>
                                   <p>Marvin McKinney</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1196,7 +1197,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Brooklyn Simmons</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1262,7 +1263,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/6.jpg') }}" alt="user"></div>
                                   <p>Ronald Richards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1282,7 +1283,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/10.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/10.jpg') }}" alt="user"></div>
                                   <p>Darlene Robertson</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1302,7 +1303,7 @@
                                   <svg class="important-mail active">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/12.png') }}" alt="user"></div>
                                   <p>Jacob Jones</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1320,7 +1321,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Ralph Edwards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1338,7 +1339,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/6.jpg') }}" alt="user"></div>
                                   <p>Ronald Richards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1380,7 +1381,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/12.png') }}" alt="user"></div>
                                   <p>Jacob Jones</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1398,7 +1399,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Ralph Edwards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1427,7 +1428,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/14.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/14.png') }}" alt="user"></div>
                                   <p>Brooklyn Simmons</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1447,7 +1448,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"></div>
                                   <p>Marvin McKinney</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1518,7 +1519,7 @@
                                   <svg class="important-mail active">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/dashboard/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"></div>
                                   <p>Marvin McKinney</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1538,7 +1539,7 @@
                                   <svg class="important-mail active">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Brooklyn Simmons</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1586,7 +1587,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Ralph Edwards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1604,7 +1605,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/6.jpg') }}" alt="user"></div>
                                   <p>Ronald Richards</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1624,7 +1625,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/12.png') }}" alt="user"></div>
                                   <p>Jacob Jones</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1772,7 +1773,7 @@
                                   <svg class="important-mail">
                                     <use href="  #fill-star"></use>
                                   </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png" alt="user"></div>
+                                  <div class="rounded-border"><img class="img-fluid" src="{{ asset('assets/images/user/3.png') }}" alt="user"></div>
                                   <p>Brooklyn Simmons</p>
                                 </div>
                                 <div class="inbox-message">
@@ -1970,7 +1971,7 @@
                         <div class="user-mail-wrapper">
                           <div class="user-title">
                             <div>
-                              <div class="rounded-border"> <img class="img-fluid" src="../assets/images/user/12.png" alt="user"></div>
+                              <div class="rounded-border"> <img class="img-fluid" src="{{ asset('assets/images/user/12.png') }}" alt="user"></div>
                               <div class="dropdown-subtitle">
                                 <p>Jacob Jones</p>
                                 <div class="onhover-dropdown">
@@ -2026,7 +2027,7 @@
                             </div>
                             <div class="d-inline-block">
                               <div class="attchment-file common-flex">
-                                <div class="common-flex align-items-center"><img src="../assets/images/email-template/pdfs.png" alt="pdf">
+                                <div class="common-flex align-items-center"><img src="{{ asset('assets/images/email-template/pdfs.png') }}" alt="pdf">
                                   <div class="d-block">
                                     <p>Offer_Letter.pdf</p>
                                     <p>200KB</p>
@@ -2076,34 +2077,34 @@
       </div>
     </div>
     <!-- latest jquery-->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <!-- feather icon js-->
-    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="{{ asset('assets/js/icons/feather-icon/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/js/icons/feather-icon/feather-icon.js') }}"></script>
     <!-- scrollbar js-->
-    <script src="../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../assets/js/scrollbar/custom.js"></script>
+    <script src="{{ asset('assets/js/scrollbar/simplebar.js') }}"></script>
+    <script src="{{ asset('assets/js/scrollbar/custom.js') }}"></script>
     <!-- Sidebar jquery-->
-    <script src="../assets/js/config.js"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/sidebar-pin.js"></script>
-    <script src="../assets/js/slick/slick.min.js"></script>
-    <script src="../assets/js/slick/slick.js"></script>
-    <script src="../assets/js/header-slick.js"></script>
+    <script src="{{ asset('assets/js/sidebar-menu.js') }}"></script>
+    <script src="{{ asset('assets/js/sidebar-pin.js') }}"></script>
+    <script src="{{ asset('assets/js/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('assets/js/slick/slick.js') }}"></script>
+    <script src="{{ asset('assets/js/header-slick.js') }}"></script>
     <!-- calendar js-->
-    <script src="../assets/js/letter-box/custom-mail-pagination.js"></script>
-    <script src="../assets/js/letter-box/custom-usermail.js"></script>
-    <script src="../assets/js/editors/quill.js"></script>
-    <script src="../assets/js/editors/custom-quill.js"></script>
-    <script src="../assets/js/print.js"></script>
-    <script src="../assets/js/tooltip-init.js"></script>
+    <script src="{{ asset('assets/js/letter-box/custom-mail-pagination.js') }}"></script>
+    <script src="{{ asset('assets/js/letter-box/custom-usermail.js') }}"></script>
+    <script src="{{ asset('assets/js/editors/quill.js') }}"></script>
+    <script src="{{ asset('assets/js/editors/custom-quill.js') }}"></script>
+    <script src="{{ asset('assets/js/print.js') }}"></script>
+    <script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/theme-customizer/customizer.js"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/js/theme-customizer/customizer.js') }}"></script>
   </body>
 
 <!-- Mirrored from admin.pixelstrap.net/riho/template/letter-box.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Sep 2024 20:37:50 GMT -->
