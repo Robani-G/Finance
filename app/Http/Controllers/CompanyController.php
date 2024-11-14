@@ -46,18 +46,21 @@ class CompanyController extends Controller
 
     public function Index()
     {
-        $Company = Company::orderByDesc('created_at')->paginate(50);
-        return view('Admin.Company.Index',compact("Company"));
+        $Companies = Company::orderByDesc('created_at')->paginate(50);
+        return view('Admin.Company.Index',compact("Companies"));
     }
 
     public function Store(Request $request)
     {
+        // dd("hello");
         $ValidatedData= $request->validate([
-            'company_name' => 'required|unique:companies,company_name',
+            'Name' => 'required|unique:companies,Name',
+            'Description' => 'nullable|string',
+
 
         ], [
-            'company_name.required' => 'Company name is empty',
-            'company_name.unique' => $request->company_name .  ' Can not be submitted again',
+            'Name.required' => 'Company name is required',
+            'Name.unique' => $request->company_name .  ' Can not be submitted again',
         ]);
 
         $Company = new Company($ValidatedData);
@@ -68,7 +71,7 @@ class CompanyController extends Controller
         //     'Action' => $ValidatedData['company_name'] . ' Is registered',
         //     'UserId' => Auth::id(),
         // ]);
-        return redirect()->route('Admin.Company.Index')->with('success', $ValidatedData['company_name'] . ' Is registered successfully');
+        return redirect()->route('Admin.Company.Index')->with('success', $ValidatedData['Name'] . ' Is registered successfully');
     }
 
     public function Show($id){

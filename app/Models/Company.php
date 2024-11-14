@@ -20,8 +20,10 @@ class Company extends Model
     }
 
     protected $fillable=[
-        'company_name',
-        'added_by',
+        'Name',
+        'Added_by',
+        'Updated_By',
+
     ];
 
     public function AddedBy(){

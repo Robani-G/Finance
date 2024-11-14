@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
-class File extends Model
+class Requests extends Model
 {
     protected $keyType = 'string';
 
@@ -20,18 +20,21 @@ class File extends Model
     }
 
     protected $fillable=[
-        'file_name',
+        'Company_Id',
+        'Added_By',
+        'Updated_By',
+        'Approved_By',
+        'Description',
         'file_path',
-        'shared_with_user_id',
-        'user_id',
-        'read',
+        'Status',
+
     ];
 
-    public function UserId(){
-        return $this->belongsTo(User::class,"user_id");
+    public function User(){
+        return $this->belongsTo(User::class,"Approved_By");
     }
-    public function SharedToUser()
+    public function Company()
     {
-        return $this->belongsTo(User::class, 'shared_with_user_id');
+        return $this->belongsTo(Company::class, 'Company_Id');
     }
 }

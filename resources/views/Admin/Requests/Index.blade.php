@@ -7,7 +7,7 @@
       <div class="page-title">
         <div class="row">
           <div class="col-6">
-            <h4>All Companies </h4>
+            <h4>Finance Requests Table</h4>
           </div>
           <div class="col-6">
             <ol class="breadcrumb">
@@ -15,7 +15,7 @@
                   <svg class="stroke-icon">
                     <use href="  #stroke-home"></use>
                   </svg></a></li>
-              <li class="breadcrumb-item">Company </li>
+              <li class="breadcrumb-item">Finance</li>
               <li class="breadcrumb-item active">Index</li>
             </ol>
           </div>
@@ -43,14 +43,18 @@
                 </thead>
                 <tbody>
                   <tr>
-                    @foreach ($Companies as $key=>$Company)
+                    @foreach ($Requests as $key=>$Request)
                     <th scope="row">{{$key+1}}</th>
-                    <th>{{$Company->Name}}</th>
-                    {{-- <td>{{$Company->Description}}</td> --}}
+                    <th>{{$Request->Company->Name}}</th>
+                    {{-- <td>{{$Request->Description}}</td> --}}
                     <td>
-                        <button class="btn btn-pill btn-outline-success btn-air-success btn-sm" type="button" title="btn btn-pill btn-outline-success btn-air-success btn-sm">Show</button>
-                        <button class="btn btn-pill btn-outline-warning btn-air-warning btn-sm" type="button" title="btn btn-pill btn-outline-warning btn-air-warning btn-sm">Edit</button>
-                        <button class="btn btn-pill btn-outline-danger btn-air-danger btn-sm" type="button" title="btn btn-pill btn-outline-danger btn-air-danger btn-sm">Delete</button>
+                        @if ($Request->Status === 'Approved')
+                        <li class="btn btn-outline-success txt-dark">
+                            <a href="{{ route('Admin.Requests.Print', $Request->id) }}">Print</a>
+                        </li>
+                    @endif                        <button class="btn btn-pill btn-outline-success btn-air-success btn-sm" type="button" title="btn btn-pill btn-outline-success btn-air-success btn-sm">Show</button>
+                        {{-- <button class="btn btn-pill btn-outline-warning btn-air-warning btn-sm" type="button" title="btn btn-pill btn-outline-warning btn-air-warning btn-sm">Edit</button>
+                        <button class="btn btn-pill btn-outline-danger btn-air-danger btn-sm" type="button" title="btn btn-pill btn-outline-danger btn-air-danger btn-sm">Delete</button> --}}
                     </td>
                   </tr>
                   @endforeach
